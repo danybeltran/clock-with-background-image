@@ -1,0 +1,68 @@
+@media screen and (max-width: 1400px) {
+  .clock {
+    background-image: url(/img/sierra.jpg);
+    background-size: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .clock {
+    background-image: url(/img/sierra.jpg);
+    background-size: 150%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .clock {
+    background-image: url(/img/sierra.jpg);
+    background-size: 190%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .clock {
+    background-image: url(/img/sierra-mobile.jpg);
+    background-size: 100%;
+  }
+}
+.clock {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+
+  font-size: 40px;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+.clock .time {
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.clock .time .time-item {
+  font-family: "Orbitron", sans-serif;
+  margin: 10px;
+}
+.clock .time .date {
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  font-size: 20px;
+  text-align: center;
+}
